@@ -62,14 +62,15 @@ section.with-bg-dark {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--color-lighter);
+    background-color: white;
+    margin: 20px;
   }
   
   .work-item img {
     width: 100%;
-    height: 150px; /* Höhe des Bildes anpassen */
+    height: 150px; 
     object-fit: cover;
-    margin-bottom: 10px; /* Abstand zwischen Bild und Titel */
+    margin-bottom: 10px;
   }
   
   .work-item .content {

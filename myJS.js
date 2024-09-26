@@ -1,11 +1,8 @@
-// Lade die works.json-Datei
+// Gpt Code
 fetch('works.json')
   .then(response => response.json())
   .then(data => {
-    // Erstelle ein Array mit den ersten 5 Arbeiten
     const works = data.slice(0, 5);
-
-    // Erstelle die HTML-Struktur für die Arbeiten
     const workGrid = document.querySelector('.work-grid');
     works.forEach(work => {
       const workItem = document.createElement('div');
