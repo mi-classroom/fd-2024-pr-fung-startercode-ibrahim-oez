@@ -20,4 +20,4 @@ npm run dev
   /uploads           enthält Bilder, die via CMS hochgeladen wurden
 /compiled-assets/    enthält die kompiulierten Assets, z.B. Styles. Hier keine Änderungen vornehmen.
 ```
-😎
+Ibrahim Özdogan😎
