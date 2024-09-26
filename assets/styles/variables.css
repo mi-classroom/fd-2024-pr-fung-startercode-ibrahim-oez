@@ -31,26 +31,27 @@
   /* Opacity */
   --op-medium: 0.6;
 
+  /* gpt generiert*/
   /* Base Colors */
-  --color-steingrau: hsl(42deg 3% 55% / 60%);
-  --color-lichtgrau: hsl(100deg 3% 77% / 100%);
-  --color-hellgrau: #BBBAB7;
-  --color-blaugrau: #82899A;
-  --color-pink: #d16;
-  --color-green: #10CFA3;
-  --color-blue: #28C0DE;
-  --color-darkblue: #047A91;
-  --color-yellow: #DECC28;
-  --color-light: #E6DED1;
-  --color-lightest: #fff;
-  --color-lighten: rgb(255 255 255 / 20%);
-  --color-lighten-strong: rgb(255 255 255 / 50%);
-  --color-dark: #57544F;
-  --color-darker: #000;
-  --color-darkest: #000;
-  --color-darken: rgb(0 0 0 / 20%);
-  --color-darken-strong: rgb(0 0 0 / 70%);
-  --color-darken-light: rgb(20 20 0 / 5%);
+  --color-steingrau: hsl(42deg 10% 60% / 70%);  /* Mehr Sättigung und Helligkeit */
+  --color-lichtgrau: hsl(100deg 10% 85% / 100%); /* Heller und lebhafter */
+  --color-hellgrau: #cac8c5;  /* Helleres, lebendigeres Grau */
+  --color-blaugrau: #7088A0;  /* Kräftigeres Blaugrau */
+  --color-pink: #e91e63;      /* Intensiveres Pink */
+  --color-green: #4caf50;     /* Frisches, lebhaftes Grün */
+  --color-blue: #00bcd4;      /* Helleres Türkisblau */
+  --color-darkblue: #027ba5;  /* Intensiveres Dunkelblau */
+  --color-yellow: #ffd600;    /* Kräftigeres Gelb */
+  --color-light: #f0e7d6;     /* Wärmeres Hellbeige für mehr Kontrast */
+  --color-lightest: #ffffff;  /* Weiß bleibt gleich */
+  --color-lighten: rgba(255, 255, 255, 0.25);  /* Leichterer Weiß-Ton für Akzente */
+  --color-lighten-strong: rgba(255, 255, 255, 0.6);  /* Kräftigerer Weiß-Ton */
+  --color-dark: #4b4743;      /* Etwas wärmeres Dunkelgrau */
+  --color-darker: #1a1a1a;    /* Tiefes Anthrazit für stärkeren Kontrast */
+  --color-darkest: #000000;   /* Bleibt Schwarz */
+  --color-darken: rgba(0, 0, 0, 0.25);  /* Kräftigere Abdunklung */
+  --color-darken-strong: rgba(0, 0, 0, 0.75);  /* Stärkere Abdunklung */
+  --color-darken-light: rgba(20, 20, 0, 0.1);  /* Etwas mehr Sichtbarkeit */
 
   /* Functional Colors */
   --interaction-color: var(--color-dark);
