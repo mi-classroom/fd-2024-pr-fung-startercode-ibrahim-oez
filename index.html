@@ -27,6 +27,7 @@
   <!-- Styles -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/assets/styles/_combined-styles.css"> <!-- Hier den pfad ändern -->
+  <link rel="stylesheet" href="myStyles.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
 
@@ -303,7 +304,7 @@
      
     
       <!-- Collapsible list element 1 -->
-      <details>
+      <details class="details-content">
         <summary>Vor der Arbeit</summary>
         <h2 id="vor-der-arbeit">Vor der Arbeit</h2>
 
@@ -342,7 +343,7 @@
       </details>
     
       <!-- Collapsible list element 2 -->
-      <details>
+      <details class="details-content">
         <summary>Während der Arbeit </summary>
         <h2 id="während-der-arbeit">Während der Arbeit</h2>
 
@@ -355,7 +356,7 @@
     </section>
     
       <!-- Collapsible list element 3 -->
-      <details>
+      <details class="details-content">
         <summary>Abschluss der Arbeit </summary>
         <h2 id="abschluss-der-arbeit">Abschluss der Arbeit</h2>
 
@@ -387,6 +388,39 @@
     <section class="section with-bg-gray">
       <h2>Abgeschlossene Arbeiten</h2>
       <ul data-js-finished-works class="work-overview is-full-width"></ul>
+    </section>
+
+    <section class="section with-bg-dark">
+      <h2>Themen vorschlagen</h2>
+      <p>Haben Sie einen Themenwunsch oder -vorschlag? Ich suche vor allem nach Themen, die Interfaces im industriellen und musealen Kontext behandeln. Keine reinen Tech-Themen – Interfaces im Fokus!</p>
+  
+      <form action="/submit-vorschlag" method="post">
+          <div>
+              <label for="name">Name:</label>
+            </br>
+              <input type="text" id="name" name="name" placeholder="Dein Name" required style="border-bottom: 1px solid #4caf50;">
+          </div>
+        </br>
+          <div class="is-inline">
+              <label for="email">E-Mail:</label>
+            </br>
+              <input type="email" id="email" name="email" placeholder="Deine E-Mail" required style="border-bottom: 1px solid #4caf50;">
+          </div>
+        </br>
+          <div>
+              <label for="vorschlag">Themenvorschlag:</label>
+            </br>
+              <input id="vorschlag" name="vorschlag" rows="4" placeholder="Welches Thema?" required style="border-bottom: 1px solid #4caf50;"></input>
+          </div>
+        </br>
+          <div>
+              <label for="vorschlag">Erklärung zum Thema</label></div>
+          </br>
+              <textarea id="erklaerung" name="erklaerung" rows="4" placeholder="Beschreibe das Thema" required style="border: 1px solid #4caf50;width: 60%;height: auto;"></textarea>
+          </div>
+        </br>
+          <button class="simple-button" type="submit">Vorschlag senden</button>
+      </form>
     </section>
 
   </main>
