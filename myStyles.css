@@ -1,62 +1,81 @@
 /* Themen-Vorschlag-Section */
 section.with-bg-dark {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  section.with-bg-dark h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  section.with-bg-dark p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  section.with-bg-dark form {
-    margin-top: 20px;
-  }
-  
-  section.with-bg-dark label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  section.with-bg-dark input, section.with-bg-dark textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  section.with-bg-dark button[type="submit"] {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  section.with-bg-dark button[type="submit"]:hover {
-    background-color: #3e8e41;
-  }
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
-  section.with-bg-dark input, section.with-bg-dark textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid #ccc;
-  }
+section.with-bg-dark h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+section.with-bg-dark p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+section.with-bg-dark form {
+  margin-top: 20px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+section.with-bg-dark label {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  transition: 0.2s ease all;
+  color: #ccc; /* Standardfarbe der Labels */
+  pointer-events: none;
+}
+
+section.with-bg-dark input,
+section.with-bg-dark textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ccc;
+  background: transparent; /* Hintergrund transparent für den Effekt */
+}
+
+section.with-bg-dark input:focus,
+section.with-bg-dark textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #4CAF50; /* Aktive Farbe beim Fokussieren */
+}
+
+section.with-bg-dark input:focus + label,
+section.with-bg-dark textarea:focus + label,
+section.with-bg-dark input:not(:placeholder-shown) + label,
+section.with-bg-dark textarea:not(:placeholder-shown) + label {
+  top: -10px; /* Verschiebe das Label nach oben */
+  left: 10px; /* Halte die horizontale Position */
+  font-size: 12px; /* Verkleinere die Schriftgröße */
+  color: #4CAF50; /* Ändere die Farbe beim Fokussieren */
+}
+
+section.with-bg-dark button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+section.with-bg-dark button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
 
   .work-item {
     display: flex;
@@ -76,3 +95,5 @@ section.with-bg-dark {
   .work-item .content {
     text-align: center;
   }
+
+  

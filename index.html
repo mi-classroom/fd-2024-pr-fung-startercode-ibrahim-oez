@@ -326,38 +326,34 @@
     <a href="n-pola-can-i-cai.html">Zu Can I CAI</a>
 
     <section class="section with-bg-dark">
-     
-      <h2><i class="fas fa-magic"></i>  Themen vorschlagen</h2>
+      <h2><i class="fas fa-magic"></i> Themen vorschlagen</h2>
       <p>Haben Sie einen Themenwunsch oder -vorschlag? Ich suche vor allem nach Themen, die Interfaces im industriellen und musealen Kontext behandeln. Keine reinen Tech-Themen – Interfaces im Fokus!</p>
   
       <form action="/submit-vorschlag" method="post">
-          <div>
+          <div class="form-group">
               <label for="name">Name:</label>
-            </br>
-              <input type="text" id="name" name="name" placeholder="Dein Name" required style="border-bottom: 1px solid #4caf50;">
+              <input type="text" id="name" name="name" placeholder=" " required>
           </div>
-        </br>
-          <div class="is-inline">
+  
+          <div class="form-group">
               <label for="email">E-Mail:</label>
-            </br>
-              <input type="email" id="email" name="email" placeholder="Deine E-Mail" required style="border-bottom: 1px solid #4caf50;">
+              <input type="email" id="email" name="email" placeholder=" " required>
           </div>
-        </br>
-          <div>
+  
+          <div class="form-group">
               <label for="vorschlag">Themenvorschlag:</label>
-            </br>
-              <input id="vorschlag" name="vorschlag" rows="4" placeholder="Welches Thema?" required style="border-bottom: 1px solid #4caf50;"></input>
+              <input type="text" id="vorschlag" name="vorschlag" placeholder=" " required>
           </div>
-        </br>
-          <div>
-              <label for="vorschlag">Erklärung zum Thema</label></div>
-          </br>
-              <textarea id="erklaerung" name="erklaerung" rows="4" placeholder="Beschreibe das Thema" required style="border: 1px solid #4caf50;width: 60%;height: auto;"></textarea>
+  
+          <div class="form-group">
+              <label for="erklaerung">Erklärung zum Thema:</label>
+              <textarea id="erklaerung" name="erklaerung" rows="4" placeholder=" " required></textarea>
           </div>
-        </br>
+  
           <button class="simple-button" type="submit">Vorschlag senden</button>
       </form>
-    </section>
+  </section>
+  
 
     
     
